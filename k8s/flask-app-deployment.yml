@@ -1,3 +1,4 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -12,10 +13,10 @@ spec:
         app: flask-app
     spec:
       containers:
-        - name: flask-app
-          image: mohansai1997/gitops-poc:1.0.0
-          env:
-          - name: NAME
-            value: "Hi World"
-          ports:
-            - containerPort: 8000
+      - name: flask-app
+        image: mohansai1997/gitops-poc:1.0.1
+        env:
+        - name: NAME
+          value: "Hi World"
+        ports:
+        - containerPort: 8000
