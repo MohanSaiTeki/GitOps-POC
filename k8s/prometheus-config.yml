@@ -13,3 +13,8 @@ data:
         scrape_interval: 5s
         static_configs:
           - targets: ['localhost:9090']
+      
+      - job_name: 'new_job'
+        scrape_interval: 5s
+        static_configs:
+          - targets: ['localhost:9090']
