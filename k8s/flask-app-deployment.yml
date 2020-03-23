@@ -14,7 +14,7 @@ spec:
           image: mohansai1997/gitops-poc
           env:
           - name: NAME
-            value: "Hello World"
+            value: "Hello World====================="
           ports:
             - containerPort: 8000
 
