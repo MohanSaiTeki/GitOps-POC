@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: prometheus-yaml-file
-  namespace: gitops-poc-17506377-test
+  namespace: flux
 data:
   prometheus.yml: |-
     global:

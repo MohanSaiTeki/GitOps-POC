@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: grafana
-  namespace: gitops-poc-17506377-test
+  namespace: flux
 spec:
   replicas: 1
   selector:
