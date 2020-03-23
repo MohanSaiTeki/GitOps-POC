@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: flask-app
   namespace: flux
-  annotations:
-      fluxcd.io/automated: "true"
 spec:
   template:
     metadata:
@@ -13,5 +11,10 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: mohansai1997/gitops-poc:latest
+          image: mohansai1997/gitops-poc
+          env:
+          - name: NAME
+            value: "Hello World====================="
+          ports:
+            - containerPort: 8000
 
