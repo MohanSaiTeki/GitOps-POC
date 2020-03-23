@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: mohansai1997/gitops-poc
+          image: mohansai1997/gitops-poc:1.0.0
           env:
           - name: NAME
             value: "Hi World"
