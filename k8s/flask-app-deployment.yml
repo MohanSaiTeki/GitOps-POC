@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: mohansai1997/gitops-poc:1.0.5
+        image: mohansai1997/gitops-poc:1.0.6
         env:
         - name: NAME
           value: "Hi World I am Flux"
