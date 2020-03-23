@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: flask-app
   namespace: flux
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   template:
     metadata:
