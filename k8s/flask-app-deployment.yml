@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: flask-app
   namespace: flux
+
 spec:
   template:
     metadata:
