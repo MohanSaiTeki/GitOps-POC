@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: flux
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+        - name: flask-app
+          image: mohansai1997/gitops-poc
+          env:
+          - name: NAME
+            value: "Hi World"
+          ports:
+            - containerPort: 8000
