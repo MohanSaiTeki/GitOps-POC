@@ -13,9 +13,9 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: mohansai1997/gitops-poc:20
+          image: mohansai1997/gitops-poc:19
           env:
           - name: NAME
-            value: "Hi World:20""
+            value: "Version=19"
           ports:
             - containerPort: 8000
